@@ -61,10 +61,16 @@ public class MainActivity extends YouTubeBaseActivity implements
                 // Use cueVideo() method, if you don't want to play it automatically
                 player.loadVideo(url);
 
+
+                // For fullscreen
+                player.setFullscreen(true);
+
                 // Hiding player controls
                 player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
             }
         }
+
+
     }
 
 
