@@ -52,14 +52,23 @@ public class MainActivity extends YouTubeBaseActivity implements
                                         YouTubePlayer player, boolean wasRestored) {
         if (!wasRestored) {
 
-            // loadVideo() will auto play video
-            // Use cueVideo() method, if you don't want to play it automatically
-            player.loadVideo(Config.YOUTUBE_VIDEO_CODE);
+            Bundle extras = getIntent().getExtras();
+            String url;
+            if (extras != null) {
+                url = extras.getString("url");
 
-            // Hiding player controls
-            player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
+                // loadVideo() will auto play video
+                // Use cueVideo() method, if you don't want to play it automatically
+                player.loadVideo(url);
+
+                // Hiding player controls
+                player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
+            }
         }
     }
+
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
