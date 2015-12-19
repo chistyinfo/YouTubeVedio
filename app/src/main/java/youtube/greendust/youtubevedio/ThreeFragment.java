@@ -36,7 +36,7 @@ public class ThreeFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_three, container, false);
         toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
         CustomListAdapter adapter = new CustomListAdapter(getActivity(), itemname,null);
-        list3 = (ListView) rootView.findViewById(R.id.list1);
+        list3 = (ListView) rootView.findViewById(R.id.list3);
         list3.setAdapter(adapter);
         view=rootView;
 

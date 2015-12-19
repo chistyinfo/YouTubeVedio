@@ -66,7 +66,7 @@ public class TwoFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_two, container, false);
         toolbar = (Toolbar) rootView.findViewById(R.id.toolbar);
         CustomListAdapter adapter = new CustomListAdapter(getActivity(), itemname,null);
-        list2 = (ListView) rootView.findViewById(R.id.list1);
+        list2 = (ListView) rootView.findViewById(R.id.list2);
         list2.setAdapter(adapter);
         view=rootView;
 
