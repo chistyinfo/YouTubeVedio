@@ -65,8 +65,8 @@ public class MainActivity extends YouTubeBaseActivity implements
                 // For fullscreen
                 player.setFullscreen(true);
 
-                // Hiding player controls
-                player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
+//                // Hiding player controls
+//                player.setPlayerStyle(YouTubePlayer.PlayerStyle.CHROMELESS);
             }
         }
 

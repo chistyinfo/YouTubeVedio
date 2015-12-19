@@ -40,9 +40,9 @@ public class SimpleTabsActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new OneFragment(), "ONE");
-        adapter.addFragment(new TwoFragment(), "TWO");
-        adapter.addFragment(new ThreeFragment(), "THREE");
+        adapter.addFragment(new OneFragment(), "অ্যান্ড্রয়েড অ্যাপ্লিকেশন ডেভেলপমেন্ট");
+        adapter.addFragment(new TwoFragment(), "জাভা/অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং/এন্ড্রয়েড এপ্লিকেশন ডেভেলপমেন্ট");
+        adapter.addFragment(new ThreeFragment(), "আইফোন এপ্লিকেশন ডেভেলপমেন্ট");
         viewPager.setAdapter(adapter);
     }
 

@@ -5,28 +5,17 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <ImageView
-        android:id="@+id/icon"
-        android:layout_width="140dp"
-        android:layout_height="80dp"
-        android:padding="5dp" />
 
-    <LinearLayout android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/item"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="20dp"
-            android:padding="2dp"
-            android:text="Medium Text"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#fb985d"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/item"
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textColorHighlight="@color/wallet_dim_foreground_holo_dark"
+        android:background="@drawable/big_card" />
 
         
-    </LinearLayout>
+
 </LinearLayout>
